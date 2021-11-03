@@ -1,0 +1,26 @@
+body {
+    background-color: #628E75;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 10% auto 10%;
+}
+
+.logo {
+    width: 6rem;
+    height: 3rem;
+}
+
+.icons {
+    color: #F9F9F9;
+    height: 5rem;
+    margin-top: 5%;
+    
+}
+
+.icons .fab {
+    margin: auto 10px auto 10px;
+}
