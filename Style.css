@@ -48,6 +48,36 @@ header {
     width: 30vw;
 }
 
+.filme h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
 .filme h1 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 900;
 }
+
+.filme p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.filme button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: none;
+    color: #F9F9F9;
+    padding: 2%;
+    margin: 3px;
+    cursor:pointer;
+}
+.filme .agora {
+    background-color: #628E75;
+}
+
+.filme .trailer {
+    background-color: Transparent;
+    border:#628E75 solid 3px;
+}
+
