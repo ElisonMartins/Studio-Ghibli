@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
 body {
     background-color: #628E75;
+    background-image: linear-gradient(to bottom right, #628E75, #1A4855);
+    background-repeat:no-repeat;
+    width: 98vw;
+    height: 100vh;
 }
 
 header {
@@ -7,6 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: auto 10% auto 10%;
+    
 }
 
 .logo {
@@ -17,10 +24,30 @@ header {
 .icons {
     color: #F9F9F9;
     height: 5rem;
-    margin-top: 5%;
     
 }
 
 .icons .fab {
-    margin: auto 10px auto 10px;
+    margin: 40px 10px auto 10px;
+}
+
+.ilustracao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row-reverse;
+    margin: 5% 10% 10% 10%;
+}
+.ilustracao img {
+    width: 35vw;
+    height: 60vh;
+}
+
+.filme {
+    color: #F9F9F9;
+    width: 30vw;
+}
+
+.filme h1 {
+    font-family: 'Poppins', sans-serif;
 }
