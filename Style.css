@@ -3,9 +3,10 @@
 body {
     background-color: #628E75;
     background-image: linear-gradient(to bottom right, #628E75, #1A4855);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     width: 97%;
     height: 100%;
+    overflow-y: hidden;
 }
 
 header {
@@ -13,18 +14,34 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: auto 10% auto 10%;
-    
+
+}
+
+header .icons i {
+    cursor: pointer;
+}
+
+header .icons i:hover,
+.filme button:hover {
+    color: #ff6347;
+    transform: scale(1.1);
 }
 
 .logo {
     width: 6rem;
     height: 3rem;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.3);
 }
 
 .icons {
     color: #F9F9F9;
     height: 5rem;
-    
+
 }
 
 .icons .fab {
@@ -35,9 +52,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
     margin: 5% 10% 10% 10%;
 }
+
 .ilustracao img {
     width: 35vw;
     height: 60vh;
@@ -49,14 +67,16 @@ header {
 }
 
 .filme h2 {
+    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
 .filme h1 {
+    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: 35pt;
+    font-size: 2rem;
 }
 
 .filme p {
@@ -65,28 +85,36 @@ header {
 }
 
 .filme button {
+    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     border: none;
     color: #F9F9F9;
     padding: 2%;
-    margin: 3px;
-    cursor:pointer;
+    margin: 0.1875rem;
+    transition: all 1s;
+    cursor: pointer;
 }
+
 .filme .agora {
     background-color: #628E75;
 }
 
 .filme .trailer {
     background-color: Transparent;
-    border:#628E75 solid 3px;
+    border: #628E75 solid 0.1875rem;
 }
 
 @media screen and (max-width: 750px) {
+
+    body {
+        overflow-y: scroll;
+    }
+
     .ilustracao {
         flex-direction: column;
     }
-    
+
     .ilustracao img {
         width: 70vw;
         height: 50vh;
@@ -97,7 +125,9 @@ header {
         width: 97%;
     }
 
-    .filme p, h1, h2 {
+    .filme p,
+    h1,
+    h2 {
         margin: 5px;
     }
 
@@ -108,4 +138,4 @@ header {
     .filme .trailer {
         display: none;
     }
-}    
+}
